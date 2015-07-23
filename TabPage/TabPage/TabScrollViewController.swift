@@ -187,6 +187,7 @@ public class TabScrollViewController : UIViewController
             buttonWidths.append(buttonWidth)
             
             let hintButton = HintButton()
+            hintButton.button.backgroundColor = UIColor.redColor()
             hintButton.button.setTitle(title, forState: UIControlState.Normal)
             hintButton.button.setTitleColor(tabTextColor, forState: UIControlState.Normal)
             hintButton.button.setTitleColor(tabTextColorHighLighted, forState: UIControlState.Disabled)
