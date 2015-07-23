@@ -10,7 +10,11 @@
 		7299BDB81B60B7DC001E35FA /* TabPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7299BDB71B60B7DC001E35FA /* TabPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7299BDBE1B60B7DC001E35FA /* TabPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299BDB21B60B7DC001E35FA /* TabPage.framework */; };
 		7299BDC51B60B7DC001E35FA /* TabPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDC41B60B7DC001E35FA /* TabPageTests.swift */; };
-		7299BDCF1B60B853001E35FA /* CarthageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDCE1B60B853001E35FA /* CarthageTest.swift */; };
+		7299BE011B60CACA001E35FA /* TabScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDFE1B60CACA001E35FA /* TabScrollViewController.swift */; };
+		7299BE021B60CACA001E35FA /* TabPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDFF1B60CACA001E35FA /* TabPageController.swift */; };
+		7299BE031B60CACA001E35FA /* HintButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BE001B60CACA001E35FA /* HintButton.swift */; };
+		7299BE051B60CAEB001E35FA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299BE041B60CAEB001E35FA /* SnapKit.framework */; };
+		7299BE071B60CBA6001E35FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7299BE061B60CBA6001E35FA /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +34,11 @@
 		7299BDBD1B60B7DC001E35FA /* TabPageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabPageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299BDC31B60B7DC001E35FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299BDC41B60B7DC001E35FA /* TabPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPageTests.swift; sourceTree = "<group>"; };
-		7299BDCE1B60B853001E35FA /* CarthageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarthageTest.swift; sourceTree = "<group>"; };
+		7299BDFE1B60CACA001E35FA /* TabScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabScrollViewController.swift; sourceTree = "<group>"; };
+		7299BDFF1B60CACA001E35FA /* TabPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageController.swift; sourceTree = "<group>"; };
+		7299BE001B60CACA001E35FA /* HintButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HintButton.swift; sourceTree = "<group>"; };
+		7299BE041B60CAEB001E35FA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		7299BE061B60CBA6001E35FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7299BE051B60CAEB001E35FA /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +64,7 @@
 		7299BDA81B60B7DC001E35FA = {
 			isa = PBXGroup;
 			children = (
+				7299BE041B60CAEB001E35FA /* SnapKit.framework */,
 				7299BDB41B60B7DC001E35FA /* TabPage */,
 				7299BDC11B60B7DC001E35FA /* TabPageTests */,
 				7299BDB31B60B7DC001E35FA /* Products */,
@@ -74,8 +84,11 @@
 			isa = PBXGroup;
 			children = (
 				7299BDB71B60B7DC001E35FA /* TabPage.h */,
-				7299BDCE1B60B853001E35FA /* CarthageTest.swift */,
+				7299BDFE1B60CACA001E35FA /* TabScrollViewController.swift */,
+				7299BDFF1B60CACA001E35FA /* TabPageController.swift */,
+				7299BE001B60CACA001E35FA /* HintButton.swift */,
 				7299BDB51B60B7DC001E35FA /* Supporting Files */,
+				7299BE061B60CBA6001E35FA /* Images.xcassets */,
 			);
 			path = TabPage;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7299BE071B60CBA6001E35FA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +226,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7299BDCF1B60B853001E35FA /* CarthageTest.swift in Sources */,
+				7299BE011B60CACA001E35FA /* TabScrollViewController.swift in Sources */,
+				7299BE031B60CACA001E35FA /* HintButton.swift in Sources */,
+				7299BE021B60CACA001E35FA /* TabPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +348,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
+				);
 				INFOPLIST_FILE = TabPage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -349,6 +369,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
+				);
 				INFOPLIST_FILE = TabPage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
