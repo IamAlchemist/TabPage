@@ -50,7 +50,6 @@ class HintButton : UIView
         redDot.layer.cornerRadius = redDotWidth / 2
         
         button.setTitle("hello", forState: UIControlState.Normal)
-        println("button setup")
         showsHint = false
     }
 }
