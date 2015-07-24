@@ -40,8 +40,6 @@ public class TabScrollViewController : UIViewController
         }
     }
     
-    public var menuItemInternalBackground : UIColor?
-    
     public var menuItemBackgroundColor : UIColor?
     
     public var tabButtonPadding : CGFloat = 20
@@ -189,10 +187,7 @@ public class TabScrollViewController : UIViewController
             buttonWidths.append(buttonWidth)
             
             let hintButton = HintButton()
-            if let color = menuItemInternalBackground {
-                hintButton.button.backgroundColor = color
-            }
-            hintButton.button.titleLabel?.font = tabFont
+            hintButton.button.backgroundColor = UIColor.redColor()
             hintButton.button.setTitle(title, forState: UIControlState.Normal)
             hintButton.button.setTitleColor(tabTextColor, forState: UIControlState.Normal)
             hintButton.button.setTitleColor(tabTextColorHighLighted, forState: UIControlState.Disabled)
