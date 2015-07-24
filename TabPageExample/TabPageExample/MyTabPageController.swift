@@ -31,6 +31,7 @@ class MyTabPageController: TabPageController, TabScrollViewLayout {
         tabViewController.showsDorpDown = true
         tabViewController.indicatorColor = UIColor.blackColor()
         tabViewController.layoutDelegate = self
+        tabViewController.menuItemInternalBackground = UIColor.greenColor()
         
         tabViewController.dropDownHandler = {
             [unowned self] ()->Void in
