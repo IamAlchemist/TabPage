@@ -25,7 +25,10 @@ class HintButton : UIView
     
     override func layoutSubviews() {
         button.frame = bounds
+        button.backgroundColor = UIColor.greenColor()
         redDot.frame = CGRectMake(bounds.width - redDotWidth - 5, 0 + 5, redDotWidth, redDotWidth)
+        addSubview(button)
+        println("layoutSubviews, \(bounds)")
     }
     
     init(){
@@ -48,8 +51,6 @@ class HintButton : UIView
         addSubview(redDot)
         redDot.backgroundColor = UIColor.redColor()
         redDot.layer.cornerRadius = redDotWidth / 2
-        
-        button.setTitle("hello", forState: UIControlState.Normal)
         showsHint = false
     }
 }
