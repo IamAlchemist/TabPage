@@ -181,8 +181,6 @@ public class TabScrollViewController : UIViewController
     {
         clearButtons()
         
-        println("current therad id : \(NSThread.currentThread())")
-        
         var startX : CGFloat = 0
         
         for (index, title) in enumerate(menuTitles) {
