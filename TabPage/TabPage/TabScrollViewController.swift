@@ -147,12 +147,11 @@ public class TabScrollViewController : UIViewController
         let tapGesture = UITapGestureRecognizer(target: self, action: Selector("dropDownButtonPressed:"))
         dropDownImageView.addGestureRecognizer(tapGesture)
         
-        update()
-        
         indicator.backgroundColor = UIColor.redColor()
         self.scrollView.addSubview(indicator)
         indicator.hidden = !showsIndicator
         
+        update()
     }
     
     public override func viewDidAppear(animated: Bool) {
@@ -195,7 +194,7 @@ public class TabScrollViewController : UIViewController
             
             buttons.append(hintButton)
             
-            scrollView.addSubview(hintButton)
+            scrollView.insertSubview(hintButton, belowSubview: indicator)
         }
         
         updateSubviews()
