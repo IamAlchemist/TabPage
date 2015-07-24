@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7251B7011B60EC2D0073D829 /* TabPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7251B7001B60EC2D0073D829 /* TabPage.framework */; };
 		7299BDDF1B60B900001E35FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDDE1B60B900001E35FA /* AppDelegate.swift */; };
 		7299BDE11B60B900001E35FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BDE01B60B900001E35FA /* ViewController.swift */; };
 		7299BDE41B60B900001E35FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7299BDE21B60B900001E35FA /* Main.storyboard */; };
@@ -17,6 +16,7 @@
 		7299BE091B60D1CA001E35FA /* MyTabPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BE081B60D1CA001E35FA /* MyTabPageController.swift */; };
 		7299BE0C1B60D209001E35FA /* MenuTitleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BE0A1B60D209001E35FA /* MenuTitleCollectionViewController.swift */; };
 		7299BE0D1B60D209001E35FA /* MenuTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BE0B1B60D209001E35FA /* MenuTitleCell.swift */; };
+		7299BE201B60D805001E35FA /* TabPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299BE1D1B60D7E7001E35FA /* TabPage.framework */; };
 		7299BE231B60D83D001E35FA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299BE211B60D83D001E35FA /* SnapKit.framework */; };
 		7299BE241B60D83D001E35FA /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7299BE221B60D83D001E35FA /* WebImage.framework */; };
 		7299BE271B60DDEC001E35FA /* CompositedPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299BE261B60DDEC001E35FA /* CompositedPageController.swift */; };
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7251B7001B60EC2D0073D829 /* TabPage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TabPage.framework; path = "../TabPage/build/Debug-iphoneos/TabPage.framework"; sourceTree = "<group>"; };
 		7299BDD91B60B900001E35FA /* TabPageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7299BDDD1B60B900001E35FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7299BDDE1B60B900001E35FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7251B7011B60EC2D0073D829 /* TabPage.framework in Frameworks */,
 				7299BE231B60D83D001E35FA /* SnapKit.framework in Frameworks */,
 				7299BE241B60D83D001E35FA /* WebImage.framework in Frameworks */,
+				7299BE201B60D805001E35FA /* TabPage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +82,6 @@
 		7299BDD01B60B900001E35FA = {
 			isa = PBXGroup;
 			children = (
-				7251B7001B60EC2D0073D829 /* TabPage.framework */,
 				7299BE211B60D83D001E35FA /* SnapKit.framework */,
 				7299BE221B60D83D001E35FA /* WebImage.framework */,
 				7299BE1D1B60D7E7001E35FA /* TabPage.framework */,
@@ -408,7 +406,6 @@
 					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
 				);
 				INFOPLIST_FILE = TabPageExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -425,7 +422,6 @@
 					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
 				);
 				INFOPLIST_FILE = TabPageExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
