@@ -203,6 +203,8 @@ public class TabScrollViewController : UIViewController
             hintButton.button.addTarget(self, action: Selector("buttonPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
             hintButton.button.tag = index
             
+            println("hint button tag : \(hintButton.button.tag)")
+            
             buttons.append(hintButton)
             
             scrollView.addSubview(hintButton)
@@ -213,6 +215,7 @@ public class TabScrollViewController : UIViewController
     
     func buttonPressed(sender: UIButton)
     {
+        println("button pressed")
         currentIndex = sender.tag
         if let handler = menuItemTapHandler {
             handler(index: self.currentIndex)
