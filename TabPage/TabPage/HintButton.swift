@@ -11,7 +11,7 @@ import UIKit
 
 class HintButton : UIView
 {
-    let button = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
+    var button = UIButton.buttonWithType(UIButtonType.Custom) as! UIButton
     
     let redDotWidth : CGFloat = 6
     
