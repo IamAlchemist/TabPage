@@ -193,9 +193,7 @@ public class TabScrollViewController : UIViewController
                 hintButton.button.backgroundColor = color
             }
             hintButton.button.titleLabel?.font = tabFont
-            println("set title for button")
             hintButton.button.setTitle(title, forState: UIControlState.Normal)
-            
             hintButton.button.setTitleColor(tabTextColor, forState: UIControlState.Normal)
             hintButton.button.setTitleColor(tabTextColorHighLighted, forState: UIControlState.Disabled)
             hintButton.button.addTarget(self, action: Selector("buttonPressed:"), forControlEvents: UIControlEvents.TouchUpInside)
