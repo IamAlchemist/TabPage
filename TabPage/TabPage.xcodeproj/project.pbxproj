@@ -140,6 +140,7 @@
 				7299BDAE1B60B7DC001E35FA /* Frameworks */,
 				7299BDAF1B60B7DC001E35FA /* Headers */,
 				7299BDB01B60B7DC001E35FA /* Resources */,
+				64FD8C891B6489710067C312 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -220,6 +221,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64FD8C891B6489710067C312 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7299BDAD1B60B7DC001E35FA /* Sources */ = {
@@ -350,7 +368,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
+					"$(SRCROOT)/../Carthage/Build/iOS/",
 				);
 				INFOPLIST_FILE = TabPage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -372,7 +390,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/alchemistli/Git/myprojects/TabPage/Carthage/Build/iOS,
+					"$(SRCROOT)/../Carthage/Build/iOS/",
 				);
 				INFOPLIST_FILE = TabPage/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
